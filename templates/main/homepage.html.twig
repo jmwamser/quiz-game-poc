@@ -2,12 +2,24 @@
 
 {% block title %}GAMR!{% endblock %}
 
+{% block javascripts %}
+    {{ importmap(['app','poke']) }}
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+{% endblock %}
+
 {% block body %}
 <div class="flex">
-{#     <aside class="hidden md:block md:w-64 bg-gray-900 px-2 mb-0"> #}
-{#         <h2 class="text-xl text-white font-semibold mb-6 px-2">Planets</h2> #}
-{#          #}
-{#     </aside> #}
 
     <section class="flex-1 mx-10">
         <div class="bg-gray-800 p-4 rounded my-10">
